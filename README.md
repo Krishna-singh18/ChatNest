@@ -12,6 +12,12 @@ Built for the SDE Fullstack Assignment, ChatNest features real-time 1:1 direct m
 
 > **One-line pitch:** *"Signal's look and feel, built fast, expertly documented."*
 
+## 🌐 Live Demo
+
+The application is currently hosted 24/7 on an **AWS EC2** instance using **Docker Containers**. 
+You can access the live chat environment here:
+**👉 [http://54.90.76.125:3000/chat](http://54.90.76.125:3000/chat)**
+
 ---
 
 ## 🌟 Key Features
