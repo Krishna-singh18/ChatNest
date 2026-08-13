@@ -11,7 +11,7 @@ services:
     volumes:
       - chatnest_data:/app/data
     env_file:
-      - .env
+      - ./backend/.env
     restart: unless-stopped
 
   frontend:
@@ -22,7 +22,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - .env
+      - ./frontend/.env
     depends_on:
       - backend
     restart: unless-stopped
