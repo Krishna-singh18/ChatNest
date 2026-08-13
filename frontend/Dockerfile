@@ -19,9 +19,8 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 # Copy only the necessary files from the builder stage
-COPY --from=builder /app/package.json .
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
 # Expose Next.js port
 EXPOSE 3000
@@ -30,4 +29,4 @@ EXPOSE 3000
 ENV NODE_ENV=production
 
 # Run the Next.js production server
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
