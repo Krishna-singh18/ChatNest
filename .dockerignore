@@ -1,0 +1,16 @@
+.git
+.gitignore
+node_modules/
+.next/
+__pycache__/
+.venv/
+venv/
+env/
+*.db
+*.sqlite3
+.pytest_cache/
+htmlcov/
+*.log
+.DS_Store
+make_commits.py
+docs/
