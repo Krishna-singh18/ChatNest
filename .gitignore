@@ -1,0 +1,9 @@
+# Ignore documentation
+docs/
+
+# Ignore helper scripts
+make_commits.py
+
+# OS Files
+.DS_Store
+Thumbs.db
